@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BTTS 1.0</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="manifest.json">
+  <style>
+    body { font-family: Arial, sans-serif; background:#f4f4f4; margin:0; padding:1em; }
+    h1 { color:#c8102e; text-align:center; }
+    .match { background:#fff; padding:1em; margin-bottom:1em; border-radius:8px; }
+    .score { font-weight:bold; }
+    button { background:#c8102e; color:#fff; border:none; padding:0.5em 1em; border-radius:5px; }
+  </style>
+</head>
+<body>
+  <h1>BTTS 1.0</h1>
+  <p>Select games most likely to have both teams scoring.</p>
+
+  <div class="match">
+    <div class="score">Arsenal vs Aston Villa</div>
+    <div>BTTS Probability: 72%</div>
+    <button>Add to Acca</button>
+  </div>
+
+  <div class="match">
+    <div class="score">Leeds vs Norwich</div>
+    <div>BTTS Probability: 68%</div>
+    <button>Add to Acca</button>
+  </div>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
+    }
+  </script>
+</body>
+</html>
